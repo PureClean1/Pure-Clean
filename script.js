@@ -1,4 +1,4 @@
-// 🟢 Hide Preloader When Page Loads
+// ✅ Hide Preloader When Page is Fully Loaded
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
