@@ -3,97 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pure Clean Industrial</title>
+    <title>Pure Clean - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="container-fluid">
-        <ul>
-            <li><strong>Pure Clean Industrial</strong></li>
-        </ul>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li class="dropdown">
-                <a href="#products">Products ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#manufacturing">Manufacturing</a></li>
-                    <li><a href="#healthcare">Healthcare</a></li>
-                    <li><a href="#food-processing">Food Processing</a></li>
-                    <li><a href="#automotive">Automotive</a></li>
-                </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#quote" class="btn-quote">Request a Quote</a></li>
-        </ul>
+    <!-- Preloader (Fixes Black Screen Issue) -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <img src="logo-placeholder.png" alt="Pure Clean Logo" style="max-width: 150px;">
+        <h1>Pure Clean</h1>
+        <p>Your Ultimate Cleaning Solution</p>
+        <button id="dark-mode-toggle">Light Mode</button>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
-        <h2>Powerful Industrial Cleaning Solutions</h2>
-        <p>Providing the highest quality cleaning products for manufacturing, healthcare, and food industries.</p>
-        <img src="https://files.oaiusercontent.com/file-TYsFTt4GazpyRctezFptZr" alt="Industrial Cleaning Factory" class="hero-image">
-        <a href="#quote" class="cta-button">Get a Quote</a>
-    </section>
-
-    <!-- About Us -->
-    <section class="content" id="about">
-        <h3>About Us</h3>
-        <p>With years of expertise in industrial cleaning solutions, we provide high-performance products designed to maintain hygiene in large-scale environments.</p>
-    </section>
-
-    <!-- Product Section -->
-    <section class="content" id="products">
-        <h3>Our Products</h3>
-        <label for="product-filter">Filter by Industry:</label>
-        <select id="product-filter">
-            <option value="all">All</option>
-            <option value="manufacturing">Manufacturing</option>
-            <option value="healthcare">Healthcare</option>
-            <option value="food-processing">Food Processing</option>
-            <option value="automotive">Automotive</option>
-        </select>
-
-        <img src="https://files.oaiusercontent.com/file-6yG2G85gUGjj1E2Jnijb6i" alt="Industrial Cleaning Products" class="product-image">
-
-        <ul id="product-list">
-            <li class="product manufacturing">Heavy-Duty Degreaser</li>
-            <li class="product healthcare">Hospital-Grade Disinfectant</li>
-            <li class="product food-processing">Sanitizing Cleaner for Food Industries</li>
-            <li class="product automotive">Auto Shop Surface Cleaner</li>
-        </ul>
-    </section>
-
-    <!-- Customer Reviews -->
-    <section class="content" id="reviews">
-        <h3>What Our Clients Say</h3>
-        <img src="https://files.oaiusercontent.com/file-4SeRhbDxDFkbtM7XjdL3DE" alt="Industrial Cleaning Testimonial" class="review-image">
-        <div id="carousel">
-            <p>"Our factory has never been cleaner. These products are top-notch!" - ABC Manufacturing</p>
-        </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section class="content" id="contact">
-        <h3>Contact Us</h3>
-        <form id="contact-form">
-            <label for="company">Company Name:</label>
-            <input type="text" id="company" name="company" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
+        <h2 id="hero-message">Experience a Cleaner, Fresher Home</h2>
     </section>
 
     <footer>
-        <p>&copy; 2024 Pure Clean Industrial. All rights reserved.</p>
+        <p>&copy; 2024 Pure Clean. All rights reserved.</p>
+        <button id="back-to-top">&#8679;</button>
     </footer>
 
-    <!-- External JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
