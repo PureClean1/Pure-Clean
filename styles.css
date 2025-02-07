@@ -1,0 +1,71 @@
+/* Sticky Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 10px;
+    top: 35px;
+    left: 0;
+    min-width: 150px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu li {
+    padding: 5px 10px;
+}
+.dropdown-menu li a {
+    color: rgb(255, 255, 255);
+    display: block;
+}
+.dropdown-menu li a:hover {
+    background-color: #555;
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: #ff660000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+}
+.cta-button:hover {
+    background-color: #cc550015;
+}
